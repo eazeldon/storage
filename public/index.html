@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Send Data Receipt</title>
+   <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ />
+ 
+ <!----Navbar------>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+</head>
+<style>
+   body {
+     /*background: rgb(185, 194, 219);*/
+     font-family: Arial, Helvetica, sans-serif;
+      color: grey;
+      border-style: solid;
+      border-color: green;
+      border-radius: 10px;
+      /*height: 900px;*/
+      font-size: 22px;
+  }
+   /******************** NAVBAR */
+   .navbar {
+      
+     
+      margin-bottom: 10px;
+      background-color: #00000000;/*original*/
+      /*background-color: #0000001a;*//*nice*/
+    
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      
+      
+   }
+   .navbar li a,
+   .navbar .navbar-brand {
+  padding: 5px 5px;
+  /*Add*/
+  margin: 5px 15px;
+  /*Add*/
+  /* color: #fff !important;*/
+  color: #5D697E !important;
+  /*ADD*/
+   background-color: white;
+   font-size: 18px;
+   font-weight: 18px;
+   
+ 
+}
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  /*color: #f4511e !important;*//*orange*/
+   color: #a26800 !important;
+  
+   
+   
+  /*background-color: #fff !important;*/
+ 
+  /*border: 3px solid grey;/*Add*/
+ /* border-radius: 8px;/*Add*/
+}
+
+.navbar-default .navbar-toggle {
+ /* border-color: transparent;*/
+  /* color: #fff !important;*/
+    /*color: #f4511e !important;*/
+    
+      color: #a26800 !important;
+
+    /*background-color: #e7e7e700;*/
+
+}
+/*ADD- change no inside color*/
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: #e2d9e200;
+}
+/********************** cover image ************/
+.cover-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(33, 27, 27, 0.65)), url("receipt-img/bfly-shopping-bag.png");
+   /*28, 27, 27, 0.62*/
+   
+   min-height: 750px;
+   
+
+   /* Center and scale the image nicely */
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   /* Needed to position the navbar */
+   position: relative;
+ }
+ /******************** title */
+
+ #prototype {
+
+text-align: center;
+   letter-spacing: 3px;
+   font-weight: 16px;
+
+   color: white;
+   
+   
+  
+}
+.prototype {
+  
+   padding-top: 200px;
+}
+
+  #file {
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-top: 10px;
+   
+   margin-bottom: 50px;
+   height: 800px;
+   width: 540px;
+   border-style: solid;
+   border-color: blue;
+   border-radius: 20px;
+   padding: 33px;
+   margin: 30px;
+
+ 
+ }
+ 
+ .form-control {
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+ }
+ #submit {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+ }
+ 
+  
+  .read {
+     font-size: 22px;
+     font-weight: 22px;
+     letter-spacing: 2px;
+  }
+ .by {
+    color: white;
+ }
+
+ .footer1{
+      /*color: grey;*/
+      color: white;
+      /*background-color: rgb(236, 197, 197);*/
+      background-color: #5d697e87;
+      border-style: solid;
+      border-color: green;
+      border-radius: 10px;
+      height: 280px;
+     
+    
+   }
+   .box3 {
+     
+     color: black;
+     border-style: solid;
+     border-color: green;
+     border-radius: 10px;
+     padding-top: 40px;
+     background-color: white;
+     /*height: 1150px;*/
+     
+     
+  
+  }
+  .container-fluid {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+.about-text {
+   
+   font-weight: 18px;
+   font-size: 18px;
+   letter-spacing: 2px;
+   color: grey;
+   /*height: 1100px;*/
+   padding-left: 90px;
+   padding-right: 80px;
+   padding-top: 50px;
+  
+   /*padding-bottom: 50px;*/
+   /*text-align: center;*/
+  
+}
+.shopping-img {
+   height: 200px;
+   width: 240px;
+}
+.shopping-img {
+   height: 200px;
+   width: 240px;
+ 
+  
+  
+}
+
+.logo {
+   width: 70px;
+   height: 40px;
+}
+   
+
+
+
+.gift {
+   height: 160px;
+   width: 200px;
+   
+   
+}
+.credit-shop{
+   width:289px;
+   height: 300px;
+}
+
+
+    .read {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 22px;
+      letter-spacing: 2px;
+     
+     
+     
+     
+      
+    }   
+
+    .margin-top{
+      padding-top: 70px;
+      padding-left: 60px;
+      padding-right: 40px;
+      
+     
+    }
+      
+   
+.logo {
+   width: 70px;
+   height: 40px;
+}
+
+.box4 {
+   color: grey;
+  border-style: solid;
+  border-color: green;
+  border-radius: 10px;
+  /*height: 900px;*/
+  /*background-color:rgb(202, 203, 245);*/
+  background-color: rgb(219 219 232);
+  padding: 30px
+
+  
+
+}
+@media only screen and (max-width: 603px) {
+   #file {
+    width: 450px;
+    padding: 30px;
+    margin: 20px;
+}
+
+   
+}
+@media only screen and (max-width: 768px) {
+.read {
+   margin-left: 20px;
+}
+
+ .box4 {
+    margin: 10px;
+
+ }
+ .form-control {
+    width: 268px;
+ }
+ .form-group {
+    width: 100px;
+
+ }
+ 
+ #submit {
+    width: 268px;
+    padding: 20px;
+    margin: 20px;
+}
+#file {
+    width: 310px;
+    padding: 30px;
+    margin: 20px;
+}
+
+
+}
+@media only screen and (max-width: 400px) {
+
+.box3 {
+   height: 2080px;
+ }
+ 
+ .demo {
+   width: 600px;
+   height: 600px;
+ }
+
+ #file {
+    width: 450px;
+    padding: 30px;
+    margin: 20px;
+}
+
+}
+
+   
+</style>
+<body>
+ <!-------------NAV---------------->
+  
+ <body id="home" class="color">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#home"><img class="logo" src="receipt-img/plexian_logo.png"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#storage">Storage</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+               </li>
+
+
+            </ul>
+
+         </div>
+      </div>
+   </nav>
+ <!---------------NAV BAR END-->
+
+   <!----Cover Image----------->
+   <div class="cover-image">
+      <!--<img src="css/image/bfly-shopping-bag.png">-->
+
+
+
+    <p><h1 id="prototype" class="prototype">Receipt Prototype</h1></p>
+
+
+    </div>
+ 
+ <!-------Upload Receipt--------------------->  
+ <!---
+<div class="container">
+  <div class="row row-cols-2">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+  </div>
+</div>
+
+
+-->
+  
+           
+  
+ <!------------------------------------->
+
+   <div id="storage" class="box4">
+      <h1 class="text-center">
+        <br>
+         Send to Storage
+      </h1>
+      <br>
+
+ <div class="container">
+      <div class="row row-cols-2">
+         <div class="col-md-7">
+
+      <form  action="/sendemail"method="POST" enctype="multipart/form-data">
+         <label for="attachment">Attachment:</label>
+         <div class="form-group">
+             <input type="file" required class="form-control file" name="image" id="file">
+         </div>      
+       
+       
+     
+      </div><!--col-->
+      
+      <div class="col-sm-5">
+        
+       
+
+      <div>
+         
+              <h2 class="text-center read">Please read</h2>
+
+              <div class="read">
+                 <ul>
+                    <li>Uplaod image receipt using image formats .png or .jpg to avoid error</li>
+                    <br>
+                    <li>You can use gmail, yahoo, or your existing email service for testing</li>
+                    <br>
+                     <li>You can download the images below for testing</li>
+                    <br>
+
+                    <li><a href="receipt-img/ica-1.png" download="ica-1.png" alt="ica">ica-1.png</a></li>
+                    
+                    <li><a href="receipt-img/target-1.jpg" download="target-1.jpg" alt="target">target-1.jpg</a></li>
+                    
+                    <li><a href="receipt-img/receipt-5.png" download="receipt-5.png" alt="hawaii poke">receipt-5.png</a></li>
+                    <br>
+                    <li>Default email from gmail</li>
+                    <br>
+
+                
+                  </ul>
+              </div>
+            
+         </div>
+
+       
+         <div class="form-group">
+             <input class="form-control" type="email" name="to" required placeholder="To: email">
+         
+          </div>
+
+           
+          
+         <div class="form-group">
+             <input  type="text" class="form-control" name="subject" placeholder="Subject:" required id="">
+         </div>
+         <div class="form-group">
+             <textarea  required class="form-control" name="body" id=""  placeholder="From: email"></textarea >
+         </div>
+       
+        <div class="form-group">
+            <button type="submit" id="submit" class="btn btn-block btn-info">
+                Send 
+            </button><br>
+         </div><!--col-->
+          <div>
+             <!-------
+             <p class="text-center by">By: E-D-F1</p>
+             ------->
+          </div>
+
+
+      
+   
+      </form>
+   </div><!--row-->
+   </div>
+  </div>
+ </div><!--container--> 
+   
+
+    <!---------About---------------------------> 
+  <div id="about" class="container-fluid box3">
+   <br>
+   <h1 class="text-center">About</h1>
+   <div class="row">
+
+      <div class="col-md-6 about-text">
+         <h3 class="">Demo site only</h3>
+        
+         
+         <ul>
+          <!--  <li>-->
+               <strong>User story</strong>
+               <br>
+               <p>
+             
+               As a company, we want to showcase this app so that potential visitors get an idea of how they can use the app. This site is for demo purposes only and uses very simple code.
+               </p>
+
+               <br>
+             
+               <strong> Upload receipt and details</strong>
+               <br>
+                   <p>
+                This app is a receipt uploader for cashbacks. The visitor can enter their information regarding what store and item they purchased in order to receive a cashback.
+             
+             </p>
+              
+            <br>
+          
+               <strong>klippa</strong>
+                <br>
+               <p>
+             
+               Klippa is an API Storage that process and scan receipts or documents.
+              </p>
+            <br>
+
+
+            <strong>Deployment and Code use</strong>
+            <br>
+              <p>
+          
+                Code used in this app is HTML, CSS, JavaScript, and node.js. It was deployed to GitHub. The server used is postman and Klippa (To be confirmed).
+
+
+             </p>
+
+             <br>
+       
+           <strong>Send to Storage </strong>
+             <br>
+              <p>
+           
+              The users of the app only have the option to send their email and image receipt, to the storage(Klippa) for cash back.
+           
+           
+           </p>
+          <br>
+ 
+          <strong>Acknowledgement</strong>
+                   <br>
+                  <p>
+                 
+                     This app was made by Eazel Don Frantzich (Intern) who also edited all pictures used.
+                 
+                 </p>
+                <br>
+ 
+                
+ 
+ 
+             </ul>
+ 
+ 
+ 
+          </div>
+
+  <!-------about Images--------------------------> 
+  <div class="col-md-6 text-center  about-img">
+   <br>
+
+   <p><img class="shopping-img" src="receipt-img/shopping.png"></p>
+   <br>
+
+   <p><img class="gift" src="receipt-img//gift.png"></p>
+   <br>
+   <p><img class="credit-shop" src="receipt-img/creditShop1.jpg"></p>
+
+   <br>
+
+   <!---- <img class="gift" src="css/image/gift.png">-->
+
+
+</div>
+
+
+
+</div>
+
+</div> 
+<!---------about end------------------>
+
+   <!---------FOOTER--------------->
+   <footer class="footer1 container-fluid text-center">
+      <h1></h1>
+   <br>
+   <div class="container-footer icons">
+      <div class="row">
+         <div class="col-md-6">
+            <p><a href="#"><img class="mr-3" src="receipt-img/facebook.png"></a><a href="#"><img class="mr-3"
+                     src="receipt-img/instagram.png"></a><a href="#"><img class="mr-3" src="receipt-img/twitter.png"></a>
+            </p>
+            <h5 calss="by">By: E. D. F.</h5>
+         </div>
+         <div class="col-md-6 text-center">
+            
+            <h4><img class="logo-footer" src="receipt-img/logo_footer.png"></h4>
+            <p><h5><a class="mr-5" href="#home">Home</a><a class="mr-5" href="#about">About</a><a class="mr-5"
+                  href="#storage">Storage</a></h5></p>
+                 <!---- <h5 calss="by">By: E. D. F.</h5>-->
+ 
+         </div>
+      </div>
+   </div>
+ </footer>  
+  
+<!-------------------footer end------------------>
+   
+   
+</body>
+
+<script type="text/javascript">
+   ///////////////////////// Alert / not working//////////
+   /*$(document).ready(function () {
+      $('#submit').click(function () {
+          $('#sendemail').show();
+      })
+
+   });*/
+
+</script>
+
+<script>
+   ////////////////////image upload///////////////////////
+   const image_input = document.querySelector("#file");
+        var uploaded_image = "";
+
+        image_input.addEventListener("change", function () {
+           const reader = new FileReader();
+           reader.addEventListener("load", () => {
+              uploaded_image = reader.result;
+              document.querySelector("#file").style.backgroundImage = `url(${uploaded_image})`
+           });
+           reader.readAsDataURL(this.files[0]);
+        })
+
+   </script>
+
+<script>
+   ////////////////////image upload///////////////////////
+   const image_input = document.querySelector("#files");
+        var uploaded_image = "";
+
+        image_input.addEventListener("change", function () {
+           const reader = new FileReader();
+           reader.addEventListener("load", () => {
+              uploaded_image = reader.result;
+              document.querySelector("#files").style.backgroundImage = `url(${uploaded_image})`
+           });
+           reader.readAsDataURL(this.files[0]);
+        })
+
+   </script>
+
+
+
+
+
+
+   <!---------Console------------------>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--------------------->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <!--------color-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+</html>
