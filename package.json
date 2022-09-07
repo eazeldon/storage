@@ -1,4 +1,5 @@
 {
+  //"homepage": "https://eazeldon.github.io/storage",
   "name": "email-upload-sendnode",
   "version": "1.0.0",
   "description": "Demo Only",
@@ -9,8 +10,12 @@
     "nodemailer": "^6.7.8",
     "nodemon": "^2.0.19"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
   "scripts": {
+    //"predeploy": "npm run build",
+    //"deploy": "gh-pages -d build",
     "start": "nodemon app.js"
   },
   "keywords": [],
